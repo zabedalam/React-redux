@@ -1,8 +1,18 @@
+// import { combineReducers } from "redux";
+// import bankReducer from './bankReducers'
+
+// const reducers=combineReducers({
+//     bank:bankReducer
+// })
+
+// export default reducers
+
+//New counter
 import { combineReducers } from "redux";
-import bankReducer from './bankReducers'
+import counter from './bankReducers'
 
 const reducers=combineReducers({
-    bank:bankReducer
+    count:counter
 })
 
 export default reducers
