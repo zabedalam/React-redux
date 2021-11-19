@@ -24,6 +24,7 @@
 
 //New counter
 import "./App.css";
+import Counter from "./components/Counter";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -42,6 +43,7 @@ function App() {
       <h1>{state}</h1>
       <button onClick={() => incrementCounter(5)}>Increment</button>
       <button onClick={() => decrementCounter(5)}>Decrement</button>
+      <Counter/>
     </div>
   );
 }

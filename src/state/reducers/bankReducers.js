@@ -23,7 +23,9 @@ const reducer = (state = 0, action) => {
       //     return state - action.payload;
       //   }
 
-      return state <= 0 ? state : state - action.payload;
+      return state <= 0
+        ? alert("Sorry you can not decrement less than 0") || state
+        : state - action.payload;
 
     default:
       return state;
