@@ -39,32 +39,32 @@ function App() {
     dispatch
   );
 
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  const handleReminder=()=>{
-    setCount(count % 2)
-  }
+  // const handleReminder=()=>{
+  //   setCount(count % 2)
+  // }
 
-  const handleIncrement = () => {
-    setCount(count + 1);
-  };
+  // const handleIncrement = () => {
+  //   setCount(count + 1);
+  // };
 
-  const handleDecrement = () => {
-    if (count <= 0) {
-        alert('Sorry you can not Decrement less than 0')
-      return count;
-    } else {
-      setCount(count - 1);
-    }
-  };
+  // const handleDecrement = () => {
+  //   if (count <= 0) {
+  //       alert('Sorry you can not Decrement less than 0')
+  //     return count;
+  //   } else {
+  //     setCount(count - 1);
+  //   }
+  // };
   return (
     <div className="App">
       <h1>{state}</h1>
       <button onClick={() => incrementCounter(5)}>Increment</button>
       <button onClick={() => decrementCounter(5)}>Decrement</button>
-      <Counter handleClick={handleIncrement} count={count} name="Increment"/>
-      <Counter handleClick={handleDecrement} count={count} name="Decrement"/>
-      <Counter handleClick={handleReminder} count={count} name="Reminder"/>
+      <Counter/>
+      {/* <Counter handleClick={handleDecrement} count={count} name="Decrement"/>
+      <Counter handleClick={handleReminder} count={count} name="Reminder"/> */}
 
 
     </div>
