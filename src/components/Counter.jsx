@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { useState } from "react";
 import Button from "./Button";
 
@@ -22,7 +23,7 @@ function Counter() {
     }
   };
   return (
-    <div>
+    <div >
       <h1>{count}</h1>
       {/* <button onClick={handleIncrement}>Increment</button> */}
       {/* <button onClick={handleClick}>{name}</button> */}
